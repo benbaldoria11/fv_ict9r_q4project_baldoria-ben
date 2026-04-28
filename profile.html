@@ -12,6 +12,7 @@
             background-image: url("https://cdn.wallpapersafari.com/64/66/DQjwep.jpg");
             background-size: cover;
             background-repeat: no-repeat;
+            color: #ffc107;
         }
         h2, p, ul {
             color: #ffc107;
@@ -36,7 +37,19 @@
             background-color: #9d012f;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
             margin-bottom: 30px;
-        }</style>
+        }
+        .col .btn {
+            margin-top: 20px;
+            background: #ffc107;
+        }
+
+        .btn-warning-custom {
+            background: #ffc107;
+            border-radius: 6px;
+            border: none;
+            color: #1f2933
+        }
+        </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -70,8 +83,19 @@
   </div>
 </nav>
 
-<input type="file" id="photoInput" accept="image/*">
-<button type="button" class="upload-btn" onclick="uploadPhoto()">Upload Photo</button>
-    
+<div class="col">
+    <h1>Student Information</h1>
+    <br>
+    <p>Student ID: 104171279</p>
+    <p>Contact Number: None</p>
+    <p>Email Address: baldoria.nt@obmontessori.edu.ph</p>
+    <p>Gender: Male</p>
+    <button type="button" id="change" class="btn" onclick="changePass()">Change Password</button>
+</div>
+    <script>
+        function changePass(){
+            alert("Can't change password as of this moment.");
+        }
+    </script>
 </body>
 </html>

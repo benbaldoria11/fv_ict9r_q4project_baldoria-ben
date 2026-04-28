@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: Electrolize;
+            background-image: url("https://cdn.wallpapersafari.com/64/66/DQjwep.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h2{
+            color: #ffc107;
+        }
+        p{
+            color: #ffc107;
+        }
+        .col{
+            background-color:#1f2933;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .row{
+            margin-bottom: 15px;
+        }
+        .navbar{
+            margin-bottom: 15px;
+            background-color:#9d012f;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+        }
+        img{
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="notebooks.html">Virtual Notebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="tasks.html">Tasks</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" onclick="logOut()">Logout</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn" style="color: #ffc107;" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="row gap-3"> 
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>Filipino</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Ms. Francisco</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>English</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Ms. Avila</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>Math</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Mr. Verba</p> 
+    </div>
+</div>
+
+<div class="row gap-3"> 
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>Science</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Ms. Mendaro</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>LT/LOP</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Ms. Manodon</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>TLE</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Ms. Del Barrio</p> 
+    </div>
+</div>
+
+<div class="row gap-3"> 
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>VE</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Mr. Buntile</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>ICT</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Mr. Santos</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>PE</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Mr. Cases</p> 
+    </div>
+</div>
+
+<div class="row gap-3"> 
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>Music</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Mr. Martin</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>Social Studies</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Mr. Reynoso</p> 
+    </div>
+    <div class="col" onclick="message()">
+        <img src="https://img.freepik.com/premium-photo/stack-empty-notebook-pen-list-pink-background-workspace-text-top-view-banner-copy-space_44868-1103.jpg?semt=ais_hybrid&w=740&q=80" style="width: 100%; height: 90px;">
+       <h2>Homeroom</h2>
+       <p>9 - Ruby</p>
+       <br>
+       <p>Mr. Santos</p> 
+    </div>
+</div>
+</div>
+
+<script>
+    function logOut() {
+            let confirmLogout = confirm("Exit now?"); //confirm() has 2 options : ok (True) and cancel(False)
+            
+            if (confirmLogout) { //if ok or True
+                window.location.href = "index.html"; //load page
+            }
+        }
+
+    function message(){
+        alert("Not Available at this time.");
+    }
+</script>
+</body>
+</html>

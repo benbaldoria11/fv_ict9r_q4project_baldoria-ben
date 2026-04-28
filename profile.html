@@ -93,6 +93,15 @@
     <button type="button" id="change" class="btn" onclick="changePass()">Change Password</button>
 </div>
     <script>
+
+        function logOut() {
+            let confirmLogout = confirm("Exit now?"); //confirm() has 2 options : ok (True) and cancel(False)
+            
+            if (confirmLogout) { //if ok or True
+                window.location.href = "index.html"; //load page
+            }
+        }
+        
         function changePass(){
             alert("Can't change password as of this moment.");
         }

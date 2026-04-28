@@ -99,6 +99,14 @@
             <li>Quarter Project</li>
         </ul>
     </div>
-    
+    <script>
+        function logOut() {
+            let confirmLogout = confirm("Exit now?"); //confirm() has 2 options : ok (True) and cancel(False)
+            
+            if (confirmLogout) { //if ok or True
+                window.location.href = "index.html"; //load page
+            }
+        }
+    </script>
 </body>
 </html>

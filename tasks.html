@@ -9,11 +9,10 @@
 
     <style>
         body {
-            font-family: 'Electrolize', sans-serif;
+            font-family: Electrolize;
             background-image: url("https://cdn.wallpapersafari.com/64/66/DQjwep.jpg");
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;
         }
         h2, p {
             color: #ffc107;
@@ -102,6 +101,28 @@
        <p>Deadline: May 4, 2026</p>
        <button type="button" id="activity" class="btn" onclick="takeActivity()">Take Activity</button> 
     </div>
+
+    <div class="row gap-2"> 
+    <div class="col" onclick="message()">
+       <h2>English</h2>
+       <p>Writing Project</p>
+       <br>
+       <p>Deadline: May 1, 2026</p>
+       <button type="button" id="activity" class="btn" onclick="takeActivity()">Take Activity</button>
+    </div>
+    <div class="col col2" onclick="message()">
+       <h2>Music & Arts</h2>
+       <p>Skills Test</p>
+       <br>
+       <p>Deadline: May 3, 2026</p>
+       <button type="button" id="activity" class="btn" onclick="takeActivity()">Take Activity</button> 
+    </div>
+
+    <script>
+        function takeActivity(){
+            alert("Can't be taken as of this moment.");
+        }
+    </script>
     
 </body>
 </html>

@@ -6,8 +6,88 @@
     <title>Q4 Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Electrolize;
+            background-image: url("https://cdn.wallpapersafari.com/64/66/DQjwep.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h2, p {
+            color: #ffc107;
+        }
+        .col {
+            background-color: #1f2933;
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+            padding: 20px;
+            margin-bottom: 15px;
+            margin-left: 10%;
+            width: 400px;
+        }
+        .row {
+            margin-bottom: 15px;
+        }
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background-color: #9d012f;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+            margin-bottom: 30px;
+        }
+        .col .btn {
+            margin-top: 20px;
+            background: #ffc107;
+        }
+
+        .btn-warning-custom {
+            background: #ffc107;
+            border-radius: 6px;
+            border: none;
+            color: #1f2933
+        }
+
+        .col2 {
+            margin-right: 10%;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="notebooks.html">Virtual Notebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="tasks.html">Tasks</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffc107;" onclick="logOut()">Logout</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn" style="color: #ffc107;" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="col">
+        <p>I. First Quarter</p>
+    </div>
     
 </body>
 </html>
